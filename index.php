@@ -34,10 +34,7 @@
             <input type="password" name="password" placeholder="password" />  <br><br>
             <input type="submit" name="submit" value = "login"/>
         </form>
-        <button onclick="window.location.href='register.php">
-           <!-- <a href="register.php">Register</a>-->
-            Register
-        </button>
+           <a href="register.php" style="-webkit-appearance: button; -moz-appearance: button; appearance:button; text-decoration:none; color:initial">Register</a>
         <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
     </div>
