@@ -34,7 +34,7 @@
             <input type="password" name="password" placeholder="password" />  <br><br>
             <input type="submit" name="submit" value = "login"/>
         </form>
-        <button onclick="document.getElementsByName('register.php').style.display='block'">
+        <button onclick="window.location.href='register.php">
            <!-- <a href="register.php">Register</a>-->
             Register
         </button>
