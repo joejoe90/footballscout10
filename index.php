@@ -1,55 +1,49 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: joseph
- * Date: 18/04/2017
- * Time: 17:32<?php
-/**
- * Created by PhpStorm.
- * User: TianTaljard
- * Date: 12/af03/2017
- * Time: 12:09
- */
-include("dbConnect.php");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marvel Movies</title>
+</head>
+<body>
+<header>
+    <h1>Marvel Movies</h1>
+</header>
+<main>
+    <section>
+        <h2>Connect to  database</h2>
+        <?
+        include 'dbConnect.php';
+        print " dbhost - ".$connectstr_dbhost."<br>";
+        print " dbname- ".$connectstr_dbname."<br>";
+        print " dbusername- ".$connectstr_dbusername."<br>";
+        print " dbpassword- ".$connectstr_dbpassword."<br>";
+        ?>
+        <p><a href="all.php">All Marvel Movies</a></p>
+        <p><a href="xmen.php">All X-MEN Movies</a></p>
+        <p><a href="dbConnect.php">dbC34Aonnect</a></p>
 
-print " dbhost - " . $connectstr_dbhost . "<br>";
-print " dbname- " . $connectstr_dbname . "<br>";
-print " dbusername- " . $connectstr_dbusername . "<br>";
-print " dbpassword- " . $connectstr_dbpassword . "<br>";
+    </section>
 
+    <div class="loginBox">
+        <h3>Login Form</h3>
+        <br><br>
+        <form method="post" action="login.php">
+            <label>Username:</label><br>
+            <input type="text" name="username" placeholder="username" /><br><br>
+            <label>Password:</label><br>
+            <input type="password" name="password" placeholder="password" />  <br><br>
+            <input type="submit" name="submit" value = "login"/>
+        </form>
+        <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
-if (empty($_POST["username"]) || empty($_POST["password"])) {
-    echo "Both fields are required.";
-} else {
-
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    //$sql_query = "SELECT marvelMovieID,yearReleased,title,productionStudio,notes FROM marvelmovies where UPPER(productionStudio) like '%FOX%'; ";
-    //$result = $link->query($sql_query);
-
-    $sql_query = "SELECT uid FROM users WHERE username='$username' and password='$password' ; ";
-    //$result = $link->query($sql_query);
-
-    //$sql = "SELECT uid FROM users WHERE username='$username' and password='$password'";
-    $result = mysqli_query($link, $sql_query);
-
-    while($row = $result->fetch_array()){
-        // print out fields from row of data
-        echo "<p>".$row ['uid']. "</p>";
-
-    }
-
-    if (mysqli_num_rows($result) == 1) {
-        header("location: xmen.php"); // Redirecting To another Page
-    } else {
-        echo "Incorrect username or password.";
-    }
-
-    $result->close();
-    $link->close();
+    </div>
 
 
-}
-?>
- */
+
+
+
+</main>
+<footer>
+</footer>
+</body>
+</html>
