@@ -34,6 +34,7 @@
             <input type="password" name="password" placeholder="password" />  <br><br>
             <input type="submit" name="submit" value = "login"/>
         </form>
+        <button type="button" href="register.php"></button>
         <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
 
     </div>
