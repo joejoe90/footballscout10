@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Marvel Movies</title>
+    <title>footballscout</title>
 </head>
 <body>
 <header>
@@ -25,7 +25,7 @@
 <!--    </section>-->
 
     <div class="loginBox">
-        <h3>Login Form</h3>
+
         <br><br>
         <form method="post" action="login.php">
             <label>Username:</label><br>
