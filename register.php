@@ -28,6 +28,9 @@ if (isset($_POST['username']) && isset($_POST['password'])){
         <Label class="input-group-addon" id="basic-addon1">Last Name</Label>
         <input type="text" name="lastname" class="form-control" placeholder="Enter lastname" required>
 
+        <Label class="input-group-addon" id="basic-addon1">username</Label>
+        <input type="text" name="username" class="form-control" placeholder="Enter username" required>
+
         <Label class="input-group-addon" id="basic-addon1">age</Label>
         <input type="number" name="age" class="form-control" placeholder="Enter age" required>
 
