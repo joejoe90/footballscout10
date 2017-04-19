@@ -8,7 +8,7 @@ if (isset($_POST['register'])) {
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $age = $_POST['age'];
-    $position = $_POST['position'];
+    $playerposition = $_POST['position'];
 
     $confirm = $link->query("SELECT * FROM user WHERE email = '" . $email . "' or username ='" . $username . "'");
 
