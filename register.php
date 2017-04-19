@@ -17,7 +17,7 @@ if (isset($_POST['register'])) {
         echo "window.location='index.php'";
     } else {
 
-        $query = "INSERT INTO user ('Firstname', 'lastname', 'username', 'age', 'playerposition', 'email', 'password') VALUES ( '$firstname','$lastname','$username', '$age', '$playerposition','$email', '$password');";
+        $query = "INSERT INTO user (Firstname, lastname, username, age, playerposition, email, password) VALUES ( '$firstname','$lastname','$username', '$age', '$playerposition','$email', '$password');";
         $result = mysqli_query($link, $query);
         if ($result) {
             echo "User Created Successfully.";
