@@ -6,11 +6,11 @@
 
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
-<body>
+<body class="mainstyle">
 <header>
     <h1>FOOTBALLSCOUT</h1>
 </header>
-<main class="mainstyle">
+<main >
 <!--    <section>-->
 <!--        <h2>Connect to  database</h2>-->
 <!--        --><?//
