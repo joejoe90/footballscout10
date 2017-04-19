@@ -14,7 +14,7 @@ if (isset($_POST['register'])) {
 
     if ($confirm->num_rows == 1) {
         echo "<script language='JavaScript'> alert('User exists'); </script>";
-        echo "window.location='index.php'";
+        header("location: index.php");
     } else {
 
         $query = "INSERT INTO user (Firstname, lastname, username, age, playerposition, email, password) VALUES ( '$firstname','$lastname','$username', '$age', '$playerposition','$email', '$password');";
