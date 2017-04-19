@@ -1,7 +1,7 @@
 <?php
 require('dbconnect.php');
 // If the values are posted, insert them into the database.
-if (isset($_POST['register'])){
+if (isset($_POST['register'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -10,21 +10,21 @@ if (isset($_POST['register'])){
     $age = $_POST['age'];
     $position = $_POST['position'];
 
-    $confirm = $link->query("SELECT * FROM user WHERE email = '".$email."' or username ='".$username."'");
+    $confirm = $link->query("SELECT * FROM user WHERE email = '" . $email . "' or username ='" . $username . "'");
 
-if ($confirm->num_rows == 1) {
-    echo "<script language='JavaScript'> alert('User exists'); </script>";
-    echo "window.location='index.php'";
-}
-else {
+    if ($confirm->num_rows == 1) {
+        echo "<script language='JavaScript'> alert('User exists'); </script>";
+        echo "window.location='index.php'";
+    } else {
 
-    $query = "INSERT INTO user (firstname, lastname, username, age, playerposition, email, password,) VALUES ( '$firstname','$lastname','$username', '$age', '$playerposition','$email', '$password' ||
+        $query = "INSERT INTO user (firstname, lastname, username, age, playerposition, email, password,) VALUES ( '$firstname','$lastname','$username', '$age', '$playerposition','$email', '$password' ||
  '')";
-    $result = mysqli_query($link, $query);
-    if($result){
-        $smsg = "User Created Successfully.";
-    }else{
-        $fmsg ="User Registration Failed";
+        $result = mysqli_query($link, $query);
+        if ($result) {
+            $smsg = "User Created Successfully.";
+        } else {
+            $fmsg = "User Registration Failed";
+        }
     }
 }
 ?>
