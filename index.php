@@ -8,7 +8,7 @@
 </head>
 <body class="mainstyle">
 <header>
-    <h1>FOOTBALLSCOUT</h1>
+    <h1 style="color: gold">FOOTBALLSCOUT</h1>
 </header>
 <main >
 <!--    <section>-->
