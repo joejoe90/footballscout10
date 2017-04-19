@@ -7,10 +7,6 @@
  */
 include("dbConnect.php");
 
-print " dbhost - " . $connectstr_dbhost . "<br>";
-print " dbname- " . $connectstr_dbname . "<br>";
-print " dbusername- " . $connectstr_dbusername . "<br>";
-print " dbpassword- " . $connectstr_dbpassword . "<br>";
 
 
 if (empty($_POST["username"]) || empty($_POST["password"])) {
