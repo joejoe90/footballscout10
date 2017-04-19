@@ -47,4 +47,4 @@
         <td valign="top"><?php echo $playerposition?></td>
     </tr>
 </table>
-<p align="center"><a href="index.php"></a></p>
+<p align="center"><a href="login.php"></a></p>
