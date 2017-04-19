@@ -41,9 +41,9 @@ if (isset($_POST['register'])) {
         <Label class="input-group-addon" id="basic-addon1">First Name</Label>
         <input type="text" name="firstname" class="form-control" placeholder="Enter Firstname" required>
 
-        <span class="left"></span>
+        <span class="left">
         <Label class="input-group-addon" id="basic-addon1">Last Name</Label>
-        <input type="text" name="lastname" class="form-control" placeholder="Enter lastname" required>
+        <input type="text" name="lastname" class="form-control" placeholder="Enter lastname" required></span>
 
         <Label class="input-group-addon" id="basic-addon1">username</Label>
         <input type="text" name="username" class="form-control" placeholder="Enter username" required>
