@@ -8,43 +8,43 @@
 
 <?php
     require_once ('dbconnect.php');
-    $id=$_SESSION['SESS_MEMBER_ID'];
-    $result3 = mysql_query("SELECT * FROM member where mem_id='$id'");
-    while($row3 = mysql_fetch_array($result3))
+    $id=$_SESSION['username'];
+    $query = mysqli_query("SELECT * FROM user where username='$id'");
+    while($result = mysqli_fetch_array($query))
     {
-        $firstname=$row3['firstname'];
-        $lastname=$row3['lastname'];
-        $username=$row3['username'];
-        $age=$row3['age'];
-        $playerposition=$row3['playerposition'];
-        $email=$row3['email'];
+        $firstname=$result['firstname'];
+        $lastname=$result['lastname'];
+        $username=$result['username'];
+        $age=$result['age'];
+        $playerposition=$result['playerposition'];
+        $email=$result['email'];
     }
     ?>
-<table width="398" border="0" align="center" cellpadding="0">
-    <tr>
-        <td height="26" colspan="2">Your Profile Information </td>
-        <td><div align="right"><a href="index.php">logout</a></div></td>
-    </tr>
-    <tr>
-        <td width="129" rowspan="5"><img src="<?php echo $picture ?>" width="129" height="129" alt="no image found"/></td>
-        <td width="82" valign="top"><div align="left">FirstName:</div></td>
-        <td width="165" valign="top"><?php echo $firstname ?></td>
-    </tr>
-    <tr>
-        <td valign="top"><div align="left">LastName:</div></td>
-        <td valign="top"><?php echo $lastname ?></td>
-    </tr>
-    <tr>
-        <td valign="top"><div align="left">username:</div></td>
-        <td valign="top"><?php echo $username ?></td>
-    </tr>
-    <tr>
-        <td valign="top"><div align="left">Age:</div></td>
-        <td valign="top"><?php echo $age ?></td>
-    </tr>
-    <tr>
-        <td valign="top"><div align="left">playerposition: </div></td>
-        <td valign="top"><?php echo $playerposition?></td>
-    </tr>
-</table>
-<p align="center"><a href="login.php"></a></p>
+<div width="398" border="0" align="center" cellpadding="0">
+    <div>
+        <label height="26" colspan="2">Your Profile Information </label>
+        <label><div align="right"><a href="index.php">logout</a></div></label>
+    </div>
+    <div>
+        <label width="129" rowspan="5"><img src="<?php echo $picture ?>" width="129" height="129" alt="no image found"/></label>
+        <label width="82" valign="top"><div align="left">FirstName:</div></label>
+        <label width="165" valign="top"><?php echo $firstname ?></label>
+    </div>
+    <div>
+        <label valign="top"><div align="left">LastName:</div></label>
+        <label valign="top"><?php echo $lastname ?></label>
+    </div>
+    <div>
+        <label valign="top"><div align="left">username:</div></label>
+        <label valign="top"><?php echo $username ?></label>
+    </div>
+    <div>
+        <label valign="top"><div align="left">Age:</div></label>
+        <label valign="top"><?php echo $age ?></label>
+    </div>
+    <div>
+        <label valign="top"><div align="left">playerposition: </div></label>
+        <label valign="top"><?php echo $playerposition?></label>
+    </div>
+</div>
+<p align="center"><a href="index.php"></a></p>
