@@ -10,7 +10,7 @@
 <header>
     <h1>FOOTBALLSCOUT</h1>
 </header>
-<main>
+<main class="mainstyle">
 <!--    <section>-->
 <!--        <h2>Connect to  database</h2>-->
 <!--        --><?//

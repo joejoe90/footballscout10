@@ -5,3 +5,7 @@
     box-sizing: border-box;
     display: block;
 }
+
+.mainstyle{
+    background-image: url('mainbackground.bmp');
+}
