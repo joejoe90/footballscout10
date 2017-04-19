@@ -20,6 +20,12 @@
         $email=$result['email'];
     }
     ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile Page</title>
+</head>
+<body>
 <div width="398" border="0" align="center" cellpadding="0">
     <div>
         <label height="26" colspan="2">Your Profile Information </label>
@@ -48,3 +54,5 @@
     </div>
 </div>
 <p align="center"><a href="index.php"></a></p>
+</body>
+</html>
