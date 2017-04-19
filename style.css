@@ -13,3 +13,7 @@
     background-image: url('mainbackground.bmp');
     width: 100%;
 }
+
+.left{
+    float: left;
+}

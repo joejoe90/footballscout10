@@ -29,9 +29,11 @@ if (isset($_POST['register'])) {
     }
 }
 ?>
-<html>
 <head>
-    <body>
+<title>REGISTER</title>
+</head>
+
+<body>
 <div class="container">
 <form class="form-signin" method="POST">
     <h2 class="form-signin-heading">Please Register</h2>
@@ -39,6 +41,7 @@ if (isset($_POST['register'])) {
         <Label class="input-group-addon" id="basic-addon1">First Name</Label>
         <input type="text" name="firstname" class="form-control" placeholder="Enter Firstname" required>
 
+        <span class="left"></span>
         <Label class="input-group-addon" id="basic-addon1">Last Name</Label>
         <input type="text" name="lastname" class="form-control" placeholder="Enter lastname" required>
 
@@ -62,6 +65,5 @@ if (isset($_POST['register'])) {
     </div>
 </form>
 </div>
-<html/>
-<head/>
-<body/>
+</body>
+</html>
