@@ -31,9 +31,10 @@ if (isset($_POST['register'])) {
 ?>
 <head>
 <title>REGISTER</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 
-<body>
+<body class="mainstyle">
 <div class="container">
 <form class="form-signin" method="POST">
     <h2 class="form-signin-heading">Please Register</h2>
