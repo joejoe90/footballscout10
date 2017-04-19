@@ -17,14 +17,14 @@ if (isset($_POST['register'])) {
         echo "window.location='index.php'";
     } else {
 
-        $query = "INSERT INTO user (firstname, lastname, username, age, playerposition, email, password,) VALUES ( '$firstname','$lastname','$username', '$age', '$playerposition','$email', '$password');";
-        $result = mysqli_query($link, $confirm);
+        $query = "INSERT INTO user ('Firstname', 'lastname', 'username', 'age', 'playerposition', 'email', 'password') VALUES ( '$firstname','$lastname','$username', '$age', '$playerposition','$email', '$password');";
+        $result = mysqli_query($link, $query);
         if ($result) {
             echo "User Created Successfully.";
             header("location: index.php");
 
         } else {
-            $fmsg = "User Registration Failed";
+             echo "User Registration Failed";
         }
     }
 }
