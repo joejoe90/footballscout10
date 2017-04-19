@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>footballscout</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
 <header>
@@ -24,7 +26,7 @@
 <!---->
 <!--    </section>-->
 
-    <div class="loginBox">
+    <div class="loginBox" >
 
         <br><br>
         <form method="post" action="login.php">
