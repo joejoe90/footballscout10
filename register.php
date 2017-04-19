@@ -39,26 +39,25 @@ if (isset($_POST['register'])) {
     <h2 class="form-signin-heading">Please Register</h2>
     <div class="input-group">
         <Label class="input-group-addon" id="basic-addon1">First Name</Label>
-        <input type="text" name="firstname" class="form-control" placeholder="Enter Firstname" required>
+        <input type="text" name="firstname" class="form-control" placeholder="Enter Firstname" required><br><br>
 
-        <span class="left">
         <Label class="input-group-addon" id="basic-addon1">Last Name</Label>
-        <input type="text" name="lastname" class="form-control" placeholder="Enter lastname" required></span>
+        <input type="text" name="lastname" class="form-control" placeholder="Enter lastname" required></span><br><br>
 
         <Label class="input-group-addon" id="basic-addon1">username</Label>
-        <input type="text" name="username" class="form-control" placeholder="Enter username" required>
+        <input type="text" name="username" class="form-control" placeholder="Enter username" required><br><br>
 
         <Label class="input-group-addon" id="basic-addon1">age</Label>
-        <input type="number" name="age" class="form-control" placeholder="Enter age" required>
+        <input type="number" name="age" class="form-control" placeholder="Enter age" required><br><br>
 
         <Label class="input-group-addon" id="basic-addon1">playerposition</Label>
-        <input type="text" name="position" class="form-control" placeholder="Enter playerposition" required>
+        <input type="text" name="position" class="form-control" placeholder="Enter playerposition" required><br><br>
 
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br><br>
 
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required><br><br>
 
         <button class="btn btn-lg btn-primary btn-block" name="register" type="submit">Register</button>
         <a class="btn btn-lg btn-primary btn-block" href="login.php">Login</a>
