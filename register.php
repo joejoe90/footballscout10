@@ -1,12 +1,25 @@
 <?php
 require('dbconnect.php');
 // If the values are posted, insert them into the database.
-if (isset($_POST['username']) && isset($_POST['password'])){
+if (isset($_POST['register'])){
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $age = $_POST['age'];
+    $position = $_POST['position'];
 
-    $query = "INSERT INTO `user` (username, password, email) VALUES ('$username', '$password', '$email')";
+    $confirm = $link->query("SELECT * FROM user WHERE email = '".$email."' or username ='".$username."'");
+
+if ($confirm->num_rows == 1) {
+    echo "<script language='JavaScript'> alert('User exists'); </script>";
+    echo "window.location='index.php'";
+}
+else {
+
+    $query = "INSERT INTO user (firstname, lastname, username, age, playerposition, email, password,) VALUES ( '$firstname','$lastname','$username', '$age', '$playerposition','$email', '$password' ||
+ '')";
     $result = mysqli_query($link, $query);
     if($result){
         $smsg = "User Created Successfully.";
@@ -34,8 +47,8 @@ if (isset($_POST['username']) && isset($_POST['password'])){
         <Label class="input-group-addon" id="basic-addon1">age</Label>
         <input type="number" name="age" class="form-control" placeholder="Enter age" required>
 
-        <Label class="input-group-addon" id="basic-addon1">position</Label>
-        <input type="text" name="position" class="form-control" placeholder="Enter position" required>
+        <Label class="input-group-addon" id="basic-addon1">playerposition</Label>
+        <input type="text" name="position" class="form-control" placeholder="Enter playerposition" required>
 
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
@@ -43,7 +56,7 @@ if (isset($_POST['username']) && isset($_POST['password'])){
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+        <button class="btn btn-lg btn-primary btn-block" name="register" type="submit">Register</button>
         <a class="btn btn-lg btn-primary btn-block" href="login.php">Login</a>
     </div>
 </form>
