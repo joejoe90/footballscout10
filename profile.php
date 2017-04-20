@@ -27,7 +27,8 @@
 
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
-<body class="mainstylee">
+<body>
+<div class="mainstylee">
 <div width="398" border="0" align="center" cellpadding="0">
     <div>
         <label height="26" colspan="2">Your Profile Information </label>
@@ -56,5 +57,6 @@
     </div>
 </div>
 <p align="center"><a href="index.php"></a></p>
+</div>
 </body>
 </html>
