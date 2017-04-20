@@ -19,5 +19,5 @@
 }
 .mainstylee{
     background-image: url('profile.jpeg');
-    width: 20%;
+    max-width: 10%;
 }
