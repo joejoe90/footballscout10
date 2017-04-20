@@ -24,6 +24,8 @@
 <html lang="en">
 <head>
     <title>Profile Page</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body class="mainstylee">
 <div width="398" border="0" align="center" cellpadding="0">
