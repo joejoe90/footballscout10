@@ -17,6 +17,7 @@
 .left{
     float: left;
 }
-.mainstylee{background-image: url('the-ball-stadion-football-the-pitch-39562.jpg');
-           width: 100%;
+.mainstylee{
+    background-image: url('profile.bmp');
+    width: 100%;
 }
