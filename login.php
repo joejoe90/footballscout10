@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: TianTaljard
- * Date: 12/af03/2017
- * Time: 12:09
+
  */
 include("dbConnect.php");
 

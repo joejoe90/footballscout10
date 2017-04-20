@@ -25,7 +25,7 @@
 <head>
     <title>Profile Page</title>
 </head>
-<body>
+<body class="mainstylee">
 <div width="398" border="0" align="center" cellpadding="0">
     <div>
         <label height="26" colspan="2">Your Profile Information </label>
