@@ -97,7 +97,7 @@ if ($uploadOk == 0) {
         </form>
     </div>
 
-    form method="post" enctype="multipart/form-data">
+    <form method="post" enctype=<"multipart/form-data">
     <div><?php echo $message; ?></div>
     <?php echo $max_file_size_tag; ?>
     <input type="file" accept="video/*" ID="fileSelect" runat="server" size="20" name="filename" action="/vids/file-upload.php">
