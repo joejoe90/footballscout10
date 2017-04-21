@@ -85,7 +85,7 @@ if ($uploadOk == 0) {
 
     <div>
         <label width="129" rowspan="5"><img src="profilepic.bmp" width="129" height="129" alt="no image found"/></label>
-        <label width="82" valign="top"><div align="left">FirstName:  </div></label>
+        <label width="82" valign="top"><div align="left">FirstName:<?php echo "$firstname" ?>  </div></label>
         <label width="165" valign="top"><?php echo "$firstname" ?></label>
     </div>
 
@@ -116,19 +116,19 @@ if ($uploadOk == 0) {
 
 
     <div>
-        <label valign="top"><div align="left">LastName:</div></label>
+        <label valign="top"><div align="left">LastName:<?php echo "$lastname" ?></div></label>
         <label valign="top"><?php echo "$lastname" ?></label>
     </div>
     <div>
-        <label valign="top"><div align="left">username:</div></label>
+        <label valign="top"><div align="left">username:<?php echo "$username" ?></div></label>
         <label valign="top"><?php echo "$username" ?></label>
     </div>
     <div>
-        <label valign="top"><div align="left">Age:</div></label>
+        <label valign="top"><div align="left">Age:<?php echo "$age" ?></div></label>
         <label valign="top"><?php echo "$age" ?></label>
     </div>
     <div>
-        <label valign="top"><div align="left">playerposition: </div></label>
+        <label valign="top"><div align="left">playerposition:<?php echo "$playerposition"?> </div></label>
         <label valign="top"><?php echo "$playerposition"?></label>
     </div>
 </div>
