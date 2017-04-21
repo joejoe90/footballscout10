@@ -99,6 +99,22 @@ if ($uploadOk == 0) {
 
 
 
+
+
+
+
+
+   <div>
+    <form action="upload_file.php" method="post" enctype="multipart/form-data">
+        <label for="file"><span>Filename:</span></label>
+        <input type="file" name="file" id="file" />
+        <br />
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+   </div>
+
+
+
     <div>
         <label valign="top"><div align="left">LastName:</div></label>
         <label valign="top"><?php echo $lastname ?></label>
