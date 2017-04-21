@@ -17,7 +17,8 @@
 .left{
     float: left;
 }
-.mainstylee{
+.mainstylee {
     background-image: url('profilebody.jpg');
-    width: 5%;
+    background-size: 50%;
+    width: 100%;
 }

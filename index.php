@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
-<body class="mainstyle">
+<body style="background-image: ">
 <header>
     <h1 style="color: yellow">FOOTBALLSCOUT</h1>
 </header>
