@@ -70,38 +70,38 @@ if ($uploadOk == 0) {
 
 
 <?php
-
-// print_r ($_FILES['file']);
-
-if (isset($_FILES['file']))
-{
-    $name = $_FILES['file']['name'];
-    $extension = explode('.', $name);
-    $extension = end($extension);
-    $type = $_FILES['file']['type'];
-    $size = $_FILES['file']['size'] / 1024 / 1024;
-    $random_name = rand();
-    $tmp = $_FILES['file']['tmp_name'];
-    if ($size >= 15971520)
-    {
-        $message = "File must not greater than 15mb";
-    }
-    else
-    {
-        move_uploaded_file($tmp, "videos/" . $random_name . '.' . $extension);
-        mysqli_query($con, "INSERT INTO tbl_video (name,url))
-    "#@%+=FEFGT6R3987EFDF86347GR=+%@#"				VALUES('$name', '$random_name.$extension')");
-    		$message = "Video has been successfully uploaded !";
-    		}
-
-    echo "$message <br/> <br/>";
-    echo "size: $size mb<br/>";
-    echo "random_name: $random_name <br/>";
-    echo "name: $name <br/>";
-    echo "type: $type <br/><br/>";
-}
-
-?>
+//
+//// print_r ($_FILES['file']);
+//
+//if (isset($_FILES['file']))
+//{
+//    $name = $_FILES['file']['name'];
+//    $extension = explode('.', $name);
+//    $extension = end($extension);
+//    $type = $_FILES['file']['type'];
+//    $size = $_FILES['file']['size'] / 1024 / 1024;
+//    $random_name = rand();
+//    $tmp = $_FILES['file']['tmp_name'];
+//    if ($size >= 15971520)
+//    {
+//        $message = "File must not greater than 15mb";
+//    }
+//    else
+//    {
+//        move_uploaded_file($tmp, "videos/" . $random_name . '.' . $extension);
+//        mysqli_query($con, "INSERT INTO tbl_video (name,url))
+//    "#@%+=FEFGT6R3987EFDF86347GR=+%@#"				VALUES('$name', '$random_name.$extension')");
+//    		$message = "Video has been successfully uploaded !";
+//    		}
+//
+//    echo "$message <br/> <br/>";
+//    echo "size: $size mb<br/>";
+//    echo "random_name: $random_name <br/>";
+//    echo "name: $name <br/>";
+//    echo "type: $type <br/><br/>";
+//}
+//
+//?>
 
 
 <!DOCTYPE html>
