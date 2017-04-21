@@ -97,15 +97,7 @@ if ($uploadOk == 0) {
         </form>
     </div>
 
-    <div>
-        <form method="post" enctype="multipart/form-data" >
-            Select Video : <br/>
-            <input name="UPLOAD_MAX_FILESIZE" value="20971520"  type="hidden"/>
-            <input type="file" name="file" id="file" />
-            <br/><br/>
-            <input type="submit" value="Upload" />
-        </form>
-    </div>
+
 
     <div>
         <label valign="top"><div align="left">LastName:</div></label>
