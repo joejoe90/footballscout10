@@ -80,7 +80,7 @@ if ($uploadOk == 0) {
 <div width="398" border="0" align="center" cellpadding="0">
     <div>
         <label height="26" colspan="2">Your Profile Information </label>
-        <label><div align="right"><a href="index.php">logout</a></div></label>
+        <label><div align="right"><a href="index.php"><input value="logout"></a></div></label>
     </div>
 
     <div>
